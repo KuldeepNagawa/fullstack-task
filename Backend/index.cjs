@@ -12,9 +12,9 @@ app.use(cors());
 app.use(express.json());
 
 // Root route for testing
-app.get('/', (req, res) => {
-  res.send('API is running...');
-});
+// app.get('/', (req, res) => {
+//   res.send('API is running...');
+// });
 
 // API Routes
 app.use('/api/projects', require('./routes/project'));
