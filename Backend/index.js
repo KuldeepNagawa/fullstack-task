@@ -1,9 +1,11 @@
 import express from 'express';
 import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+import cors from 'cors';
 // other imports
 
-const dotenv = require('dotenv');
-const cors = require('cors');
+// const dotenv = require('dotenv');
+// const cors = require('cors');
 
 import path from "path";
 
