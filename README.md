@@ -1,28 +1,25 @@
-# Full Stack Development 🚀
+# Full Stack Development
 
 This is a full-stack MERN application built for task.  
 It features a fully functional **landing page** and **admin panel** for managing projects, clients, contact forms, and newsletter subscriptions.
 
 ---
 
-## 🔧 Tech Stack
+##  MERN Stack
 
-### 🚀 Frontend
+###  Frontend
 - **React** (with Vite)
 - **Tailwind CSS**
 - **DaisyUI**
 - **Axios**
-- **React Router**
 
-### 🌐 Backend
+###  Backend
 - **Node.js**
 - **Express.js**
 - **MongoDB Atlas**
 - **Mongoose**
 - **Cloudinary** (for image uploads)
 - **Multer** (for handling image upload)
-- **CORS**
-- **dotenv**
 
 ### ☁️ Deployment
 - **Backend**: [Render.com](https://render.com)
@@ -30,7 +27,7 @@ It features a fully functional **landing page** and **admin panel** for managing
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ### `/backend`
 - `controllers/`: All business logic for handling requests
@@ -47,28 +44,13 @@ It features a fully functional **landing page** and **admin panel** for managing
 
 ---
 
-## 🔌 API Endpoints (Backend)
-
-| Method | Route               | Description                  |
-|--------|---------------------|------------------------------|
-| POST   | `/api/projects/add` | Add a new project (with image) |
-| GET    | `/api/projects`     | Get all projects             |
-| POST   | `/api/clients/add`  | Add a new client (with image) |
-| GET    | `/api/clients`      | Get all clients              |
-| POST   | `/api/contacts/add` | Submit a contact form        |
-| GET    | `/api/contacts`     | Get all contact submissions  |
-| POST   | `/api/subscribers/add` | Subscribe to newsletter   |
-| GET    | `/api/subscribers`  | Get all subscribers          |
-
----
-
-## You can explor site by this link
+## You can explore site by this link
 https://fullstack-task-e6w6.onrender.com
----
+--- for admin panal use /admin
 
-## 🔧 Setup Instructions
+##  Setup Instructions
 
-### 🧪 Project
+###  Project
 
 ```bash
 cd backend
