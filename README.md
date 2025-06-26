@@ -1,2 +1,5 @@
 # fullstack-task
-fullstack
+fullstack 
+# using MERN
+
+
