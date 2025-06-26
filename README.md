@@ -1,4 +1,4 @@
-# Flipr Full Stack Development Task 🚀
+# Full Stack Development 🚀
 
 This is a full-stack MERN application built for task.  
 It features a fully functional **landing page** and **admin panel** for managing projects, clients, contact forms, and newsletter subscriptions.
@@ -68,7 +68,7 @@ https://fullstack-task-e6w6.onrender.com
 
 ## 🔧 Setup Instructions
 
-### 🧪 Backend
+### 🧪 Project
 
 ```bash
 cd backend
