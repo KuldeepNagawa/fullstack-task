@@ -38,15 +38,15 @@ function Landing() {
     api.get('/clients/')
       .then(res => {
         if (res.data.length > 0) {
-             // Combine real and dummy projects
+             // Combine real and dummy Clients
           const combined = [...res.data, ...dummyClients];
-          setProjects(combined);
+          setClients(combined);
         } else {
           setClients(dummyClients);
         }
       })
       .catch(() => setClients(dummyClients));
-  }, []);
+  },[]);
 
   const dummyProjects = [
     {
@@ -236,7 +236,7 @@ function Landing() {
 </section>
 
 
-
+{/* about us */}
 <section ref={aboutRef} className="w-full py-16 px-4 sm:px-8 bg-sky-100">
       <div className="max-w-3xl mx-auto text-center">
         <h1 className="text-4xl font-bold text-sky-500 mb-8">About Us</h1>
@@ -348,7 +348,7 @@ function Landing() {
 
     <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row items-center gap-2">
       <input
-        className="px-4 py-2 rounded-md text-black w-64 outline-none"
+        className="px-4 py-2 rounded-md text-white w-64 outline-none"
         placeholder="Enter Email Address"
         value={subscriberEmail}
         onChange={(e) => setSubscriberEmail(e.target.value)}

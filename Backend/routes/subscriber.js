@@ -1,21 +1,8 @@
 const express = require("express");
-const Subscriber = require("../models/Subscriber");
 const router = express.Router();
+const { addSubscriber, getSubscribers } = require("../controllers/subscriberController");
 
-router.post("/add", async (req, res) => {
-  try {
-    const newSubscriber = new Subscriber({ email: req.body.email });
-    await newSubscriber.save();
-    res.status(201).json("Subscribed");
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
-router.get("/", async (req, res) => {
-  const subscribers = await Subscriber.find();
-  res.json(subscribers);
-});
+router.post("/add", addSubscriber);
+router.get("/", getSubscribers);
 
 module.exports = router;
-
